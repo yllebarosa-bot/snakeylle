@@ -1,0 +1,170 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at top, #183b30, #07140f 75%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: white;
+  padding: 15px;
+}
+
+.game-container {
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  color: #65ff9a;
+  letter-spacing: 4px;
+  text-shadow: 0 0 15px #26ff77;
+}
+
+header p {
+  color: #a8c6b2;
+  margin: 8px 0 22px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  gap: 12px;
+}
+
+.stat {
+  flex: 1;
+  background: #10251d;
+  border: 1px solid #315b45;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.stat span {
+  display: block;
+  color: #9ab5a3;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.stat strong {
+  display: block;
+  color: #65ff9a;
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+.board-wrapper {
+  width: 100%;
+  aspect-ratio: 1;
+  position: relative;
+  border: 4px solid #376c4b;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #091a12;
+  box-shadow: 0 0 25px #16a34a40;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: #06140edc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.overlay h2 {
+  font-size: 27px;
+  color: #65ff9a;
+}
+
+.overlay p {
+  color: #c0d5c7;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#startBtn {
+  background: linear-gradient(135deg, #36e878, #119b4b);
+  padding: 14px 35px;
+  border-radius: 30px;
+  color: #062010;
+  font-size: 15px;
+}
+
+.controls {
+  margin: 22px auto 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+
+.controls button {
+  background: #183c2b;
+  color: #65ff9a;
+  width: 65px;
+  height: 55px;
+  border: 1px solid #3c8054;
+  border-radius: 12px;
+  font-size: 23px;
+}
+
+.controls button:active,
+.actions button:active {
+  transform: scale(.92);
+  background: #287c48;
+}
+
+.middle-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.actions button {
+  background: #173527;
+  color: white;
+  border: 1px solid #376c4b;
+  padding: 12px 22px;
+  border-radius: 20px;
+}
+
+.instructions {
+  margin-top: 18px;
+  color: #9ab5a3;
+  font-size: 12px;
+}

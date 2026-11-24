@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Realistic Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+
+  <header>
+    <h1>🐍 SNAKE</h1>
+    <p>Classic Arcade Challenge</p>
+  </header>
+
+  <div class="stats">
+    <div class="stat">
+      <span>SCORE</span>
+      <strong id="score">0</strong>
+    </div>
+    <div class="stat">
+      <span>BEST</span>
+      <strong id="best">0</strong>
+    </div>
+  </div>
+
+  <div class="board-wrapper">
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="overlay" class="overlay">
+      <h2 id="overlayTitle">SNAKE GAME</h2>
+      <p id="overlayText">Ready for a challenge?</p>
+      <button id="startBtn">START GAME</button>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button id="up">▲</button>
+    <div class="middle-controls">
+      <button id="left">◀</button>
+      <button id="down">▼</button>
+      <button id="right">▶</button>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button id="pauseBtn">PAUSE</button>
+    <button id="restartBtn">RESTART</button>
+  </div>
+
+  <p class="instructions">
+    Swipe or use the buttons to control your snake.
+  </p>
+       <p>Crdt:Leogen</p>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
